@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color: black;
+               
+                text-align: center;
+            }
+            body{
+                background-color: antiquewhite;
+            }
+            .kit{
+                width: 500px;
+                height: 300px;
+                background-color: chartreuse;
+                text-align:center;
+                margin-left: 500px;
+
+            }
+            #val{
+                text-align: center;
+                color: red;
+               font-size: 20px;
+            }
+            #temp{
+                text-align: center;
+                color: red;
+                
+            }
+            button{
+
+                text-align:center;
+                color: red;
+            }
+img{
+ margin-left: 600px;
+}
+#dollar1{
+    align-items: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: auto;
+    
+}
+        </style>
+    </head>
+    <body>
+       
+        <h1>USD Convertor App</h1>
+       
+        <div class="kit"> 
+            <h1 id="temp">Dollar Convertor</h1>
+
+            <script>
+                function Convert()
+                {
+                    var inr;
+                   //var usd=1;
+                    var usd=parseInt(document.getElementById("val").value);
+                    inr=(usd) * 81.514545 ;
+                    //console.log(inr);
+                    document.getElementById("demo").innerHTML=inr;
+                }
+            </script>
+            <label for="val">Enter Dollar Currency:</label>
+            <input type="number" id="val"/><br><br>
+            <button type="button"  value="submit"  onclick="Convert()" id="dem">Submit</button>
+            <h1 id="demo">The value is</h1>
+            
+            <img src="dollar.jpg" alt="dollar"  />
+            <img src="dollar1.jpg" alt="dollar1" id="dollar1"/>
+            <br><br>        
+        </div>
+       
+    </body>
+</html>
